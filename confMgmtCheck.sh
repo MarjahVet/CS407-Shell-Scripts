@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Checking hostname"
 hostnamectl | grep "Static hostname"
 echo " "
