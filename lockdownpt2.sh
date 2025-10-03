@@ -1,3 +1,5 @@
+#!/bin/bash
+
 chown -R admin:100 /home/admin
 chmod 700 /home/admin/.ssh
 chmod 600 /home/admin/.ssh/authorized_keys
