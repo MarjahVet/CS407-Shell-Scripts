@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sytemctl restart sshd
+sudo sytemctl restart sshd
