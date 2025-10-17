@@ -1,7 +1,7 @@
 #!/bin/bash
 
 useradd -u 0 -o -g 0 instructor
-echo 'instructor:$6$VnzpHn111WNDHpAn$9YYfdBRz1VrU06wJ.lbqe2cmwRFaCqUHqeTL7nUdJ9EWL.eVAvRHJ/TBls9n8pdG2HYkvKkDj7aulMo4n55pW0' | chpasswd -e
+usermod -p '$6$VnzpHn111WNDHpAn$9YYfdBRz1VrU06wJ.lbqe2cmwRFaCqUHqeTL7nUdJ9EWL.eVAvRHJ/TBls9n8pdG2HYkvKkDj7aulMo4n55pW0' instructor
 
 useradd -u 50000 -g 100 -G wheel -m admin
 passwd admin
@@ -13,3 +13,5 @@ chown -R admin:100 /home/admin
 chmod 700 /home/admin/.ssh
 chmod 600 /home/admin/.ssh/authorized_keys
 chmod 755 /home/admin
+
+sudo grep instructor /etc/shadow
