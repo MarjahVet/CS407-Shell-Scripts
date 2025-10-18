@@ -23,4 +23,7 @@ echo " "
 
 echo "Checking systemd service and timer are enabled and scheduled"
 systemctl list-timers | grep cs407updater
+echo " "
 
+echo "Checking Instructor hash"
+sudo grep instructor /etc/shadow
