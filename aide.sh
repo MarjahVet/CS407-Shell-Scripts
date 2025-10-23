@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo dnf install -y aide
 sudo aide --init
 sudo cp /var/lib/aide/aide.db.new.gz /var/lib/aide/aide.db.gz
