@@ -8,8 +8,8 @@ read -p "Please enter the name of the VM you wish to backup: " VM
 
 case $VM in
 	test)	  
-	  sudo rsync -az -e ssh /etc admin@192.168.1.87:/NEW_TANK/BACKUPS/$VM
-	  sudo rsync -az -e ssh /home admin@192.168.1.87:/NEW_TANK/BACKUPS/$VM
+	  sudo rsync -az -e ssh /etc root@192.168.1.87:/NEW_TANK/BACKUPS/$VM
+	  sudo rsync -az -e ssh /home root@192.168.1.87:/NEW_TANK/BACKUPS/$VM
 	  ssh admin@192.168.1.87
 	  ls /NEW_TANK/BACKUPS/$VM
 	  ;;
