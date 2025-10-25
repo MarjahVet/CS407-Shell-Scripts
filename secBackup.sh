@@ -10,8 +10,6 @@ case $VM in
 	test)	  
 	  sudo rsync -az -e ssh /etc admin@192.168.1.87:/NEW_TANK/BACKUPS/$VM
 	  sudo rsync -az -e ssh /home admin@192.168.1.87:/NEW_TANK/BACKUPS/$VM
-	  ssh admin@192.168.1.87
-	  ls /NEW_TANK/BACKUPS/test
 	  ;;
 	www)
 	  sudo rsync -az -e ssh /etc admin@192.168.1.87:/NEW_TANK/BACKUPS/$VM
